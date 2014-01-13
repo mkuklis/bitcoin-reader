@@ -1,5 +1,5 @@
 {
-  "name": "coinaggregator",
+  "name": "bitcoin-reader",
   "version": "0.1.0",
   "dependencies": {
     "async": "latest",
