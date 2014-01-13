@@ -8,29 +8,29 @@ function MtGox() {
 util.inherits(MtGox, Market);
 
 MtGox.prototype.parse = function (data) {
-	if (!data || !data.length) return;
+  if (!data || !data.length) return;
 
-	var results = [];
+  var results = [];
 
-	for (var i = 0, l = data.length; i < l; i++) {
-		var result = {};
-		var val = data[i].data;
-		var key = getKey(val.last.currency);
-	
-		result[key] = {
-    	buy: val.buy.value,
-    	sell: val.sell.value
-		};
+  for (var i = 0, l = data.length; i < l; i++) {
+    var result = {};
+    var val = data[i].data;
+    var key = getKey(val.last.currency);
+  
+    result[key] = {
+      buy: val.buy.value,
+      sell: val.sell.value
+    };
 
-		results.push(result);
-	}
+    results.push(result);
+  }
 
-	return { mtgox: results };
+  return { mtgox: results };
 }
 
 module.exports = MtGox;
 
 
 function getKey(val) {
-	return 'btc_' + val.toLowerCase();
+  return 'btc_' + val.toLowerCase();
 }
