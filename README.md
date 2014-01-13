@@ -1,10 +1,16 @@
-# bitcoin-reader (WIP)
+# btcreader (WIP)
 
-bitcoin-reader is an attempt to aggregate bitcoin prices from various markets and share them via socket.io.
+btcreader is an attempt to aggregate bitcoin prices from various markets and share them via socket.io.
 
 ## Install
 
-    $ npm install bitcoin-reader
+    $ npm install -g btcreader
+    
+## Run
+
+     $ btcreader
+
+By default btcreader will run on port 8080.
 
 ## Supported Markets
 
