@@ -1,6 +1,6 @@
 # bitcoin-reader (WIP)
 
-bitcoin-reader is an attempt to aggregate bitcoin prices from various markets and share them via websocket.
+bitcoin-reader is an attempt to aggregate bitcoin prices from various markets and share them via socket.io.
 
 ## Install
 
@@ -29,8 +29,11 @@ For example:
         { btc_usd: { buy: 834, sell: 833.9 } }
       ]
     },
-    { btce: [ 
-      { ltc_usd: { buy: 24.33994, sell: 24.26698 } },
-      { btc_usd: { buy: 834, sell: 833.9 } }
+    { 
+      btce: [ 
+        { ltc_usd: { buy: 24.33994, sell: 24.26698 } },
+        { btc_usd: { buy: 834, sell: 833.9 } }
+      ]
+    }
 
 ````
