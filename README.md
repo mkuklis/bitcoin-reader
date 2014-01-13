@@ -43,7 +43,7 @@ For example:
 ````
 ## Client
 
-Clients can bind to `data` event on order to receive market data:
+Clients can bind to `data` event in order to receive market data:
 
 ````js
 var socket = io.connect('URL');
