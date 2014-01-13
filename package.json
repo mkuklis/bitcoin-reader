@@ -2,9 +2,9 @@
   "name": "bitcoin-reader",
   "version": "0.1.0",
   "dependencies": {
-    "async": "latest",
-    "request": "latest",
-    "socket.io": "latest"
+    "async": "0.2.9",
+    "request": "2.31.0",
+    "socket.io": "0.9.16"
   },
   "analyze": false,
   "devDependencies": {
