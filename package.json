@@ -1,0 +1,16 @@
+{
+  "name": "coinaggregator",
+  "version": "0.1.0",
+  "dependencies": {
+    "async": "latest",
+    "request": "latest",
+    "socket.io": "latest"
+  },
+  "analyze": false,
+  "devDependencies": {
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
