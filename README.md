@@ -2,8 +2,6 @@
 
 btcreader is an attempt to aggregate bitcoin prices from various markets and share them via socket.io.
 
-![btcreader](http://oi39.tinypic.com/axu8k.jpg)
-
 ## Install
 
     $ npm install -g btcreader
@@ -43,3 +41,21 @@ For example:
   }
 }
 ````
+## Client
+
+Clients can bind to `data` event on order to receive market data:
+
+````js
+var socket = io.connect('URL');
+socket.on('data', function (data) {
+  // do someting with received data
+});
+
+```` 
+
+## Demo
+
+[Client Demo](https://dl.dropboxusercontent.com/u/1250820/btcreader-client/index.html)
+
+![btcreader](http://oi39.tinypic.com/axu8k.jpg)
+
