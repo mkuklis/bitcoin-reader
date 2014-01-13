@@ -1,5 +1,6 @@
 var markets = require('./markets');
-var io = require('socket.io').listen(80);
+var port = process.env.PORT || 8080;
+var io = require('socket.io').listen(port);
 
 markets.on('data', function (data) {
 	console.log(data);
