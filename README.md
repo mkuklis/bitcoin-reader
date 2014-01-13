@@ -30,14 +30,14 @@ For example:
 
 ````js
 {
-  mtgox: [
-    { btc_usd: { buy: 834, sell: 833.9 } }
-  ]
+  mtgox: {
+    btc_usd: { buy: 834, sell: 833.9 }
+  }
 },
 { 
-  btce: [ 
-    { ltc_usd: { buy: 24.33994, sell: 24.26698 } },
-    { btc_usd: { buy: 834, sell: 833.9 } }
-  ]
+  btce: {
+    ltc_usd: { buy: 24.33994, sell: 24.26698 },
+    btc_usd: { buy: 834, sell: 833.9 }
+  }
 }
 ````

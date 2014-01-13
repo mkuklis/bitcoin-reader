@@ -10,19 +10,17 @@ util.inherits(MtGox, Market);
 MtGox.prototype.parse = function (data) {
   if (!data || !data.length) return;
 
-  var results = [];
+  var results = {};
 
   for (var i = 0, l = data.length; i < l; i++) {
     var result = {};
     var val = data[i].data;
     var key = getKey(val.last.currency);
   
-    result[key] = {
+    results[key] = {
       buy: val.buy.value,
       sell: val.sell.value
     };
-
-    results.push(result);
   }
 
   return { mtgox: results };
