@@ -1,12 +1,11 @@
 var config = require('../config');
 var events = require('events');
-var utils = require('../libs/utils');
+var utils = require('../lib/utils');
 
 module.exports = init(config.markets);
 
 function init(config) {
   var markets = load(config);
-
   var emitter = new events.EventEmitter();
   
   for (var key in markets) {

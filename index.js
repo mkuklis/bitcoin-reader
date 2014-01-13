@@ -11,6 +11,5 @@ var io = require('socket.io').listen(server);
 server.listen(port);
 
 markets.on('data', function (data) {
-	console.log(data);
   io.sockets.emit('data', data);
 });

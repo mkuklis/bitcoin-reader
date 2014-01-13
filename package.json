@@ -1,16 +1,16 @@
 {
-  "name": "bitcoin-reader",
+  "name": "btcreader",
   "version": "0.1.0",
+  "bin": {
+    "btcreader": "./bin/btcreader"
+  },
   "dependencies": {
     "async": "0.2.9",
     "request": "2.31.0",
     "socket.io": "0.9.16"
   },
   "analyze": false,
-  "devDependencies": {
-  },
-  "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": " 0.10.x"
   }
 }

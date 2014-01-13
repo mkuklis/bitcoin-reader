@@ -1,6 +1,6 @@
 var async = require('async');
 var events = require('events');
-var utils = require('../libs/utils');
+var utils = require('../lib/utils');
 var util = require("util");
 
 function Market(options) {
