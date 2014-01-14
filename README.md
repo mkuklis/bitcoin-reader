@@ -20,7 +20,7 @@ By default btcreader will run on port 8080.
 
 ## Data 
 
-Markets return data in different formats. Bitcoin Reader is trying to normalize it to a common structure:
+Markets return data in different formats. Bitcoin Reader is trying to normalize into a common structure:
 
 ````js
 { market1: { currency1: { buy: value, sell: value }, ... }}
