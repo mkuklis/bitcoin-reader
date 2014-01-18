@@ -13,13 +13,12 @@ MtGox.prototype.parse = function (data) {
   var results = {};
 
   for (var i = 0, l = data.length; i < l; i++) {
-    var result = {};
     var val = data[i].data;
     var key = getKey(val.last.currency);
   
     results[key] = {
-      buy: val.buy.value,
-      sell: val.sell.value
+      buy: parseFloat(val.buy.value),
+      sell: parseFloat(val.sell.value)
     };
   }
 

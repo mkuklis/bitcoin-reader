@@ -15,6 +15,9 @@ Btce.prototype.parse = function (data) {
   for (var i = 0, l = data.length; i < l; i++) {
     var result = {};
     var key = getKey(data[i]);
+    
+    if (!key) return;
+
     var val = data[i][key];
 
     results[key] = {
